@@ -1,4 +1,5 @@
 import ProfileCard from "./ProfileCard";
+import profilePhoto from "@/assets/profile.jpg";
 
 export const AboutSection = () => {
   const handleContactClick = () => {
@@ -50,7 +51,7 @@ export const AboutSection = () => {
             </div>
           </div>
 
-          {/* Interactive ProfileCard with User's Photo */}
+          {/* Interactive ProfileCard with Imported Photo */}
           <div className="flex justify-center items-center py-4">
             <ProfileCard
               name="Yashwant K"
@@ -59,8 +60,8 @@ export const AboutSection = () => {
               status="Online"
               statusColor="#22c55e"
               contactText="Contact"
-              avatarUrl="/assets/aistudio/IMG_9868_1f826e5e.JPG"
-              miniAvatarUrl="/assets/aistudio/IMG_9868_1f826e5e.JPG"
+              avatarUrl={profilePhoto}
+              miniAvatarUrl={profilePhoto}
               holo={0.8}
               glare={0.5}
               tiltStrength={12}
