@@ -80,7 +80,7 @@ export const Navbar = () => {
       <div className="container flex items-center justify-between">
         {/* Brand */}
         <a
-          className="text-xl font-bold flex items-center shrink-0"
+          className="text-lg sm:text-xl font-bold flex items-center shrink-0"
           href="#hero"
           onClick={(e) => {
             e.preventDefault();
@@ -91,7 +91,7 @@ export const Navbar = () => {
           <span className="relative z-10 text-glow">
             <span className="text-foreground">Yashwant</span>{" "}
             <span className="text-blue-500 font-extrabold">K</span>{" "}
-            <span className="text-primary font-medium text-lg">Portfolio</span>
+            <span className="text-primary font-medium text-base sm:text-lg">Portfolio</span>
           </span>
         </a>
 
@@ -134,7 +134,7 @@ export const Navbar = () => {
         {/* Mobile OptionWheel menu overlay */}
         <div
           className={cn(
-            "fixed inset-0 bg-background/95 backdrop-blur-2xl z-40 flex flex-col items-center justify-between py-16 px-6 touch-none overscroll-contain",
+            "fixed inset-0 bg-background/95 backdrop-blur-2xl z-40 flex flex-col items-center justify-between py-10 sm:py-16 px-4 sm:px-6 touch-none overscroll-contain",
             "transition-all duration-300 md:hidden",
             isMenuOpen
               ? "opacity-100 pointer-events-auto"
@@ -150,7 +150,7 @@ export const Navbar = () => {
 
           {/* 3D OptionWheel */}
           <div
-            className="w-full h-[360px] relative flex items-center justify-center my-auto touch-none"
+            className="w-full h-[280px] sm:h-[340px] md:h-[360px] relative flex items-center justify-center my-auto touch-none"
             onTouchMove={(e) => e.stopPropagation()}
           >
             {isMenuOpen && (
@@ -160,7 +160,7 @@ export const Navbar = () => {
                 textColor="#71717a"
                 activeColor="#3b82f6"
                 side="left"
-                fontSize={2.7}
+                fontSize={2.5}
                 spacing={1.35}
                 curve={1}
                 tilt={6}
@@ -179,10 +179,10 @@ export const Navbar = () => {
           </div>
 
           {/* Confirm / Go to Section Action */}
-          <div className="w-full max-w-xs flex flex-col items-center gap-3 pb-4">
+          <div className="w-full max-w-xs flex flex-col items-center gap-2.5 pb-2">
             <button
               onClick={() => handleMobileNav(selectedMobileIndex)}
-              className="cosmic-button w-full flex items-center justify-center gap-2 py-3.5 text-base shadow-[0_0_20px_rgba(59,130,246,0.5)] font-semibold"
+              className="cosmic-button w-full flex items-center justify-center gap-2 py-3 sm:py-3.5 text-sm sm:text-base shadow-[0_0_20px_rgba(59,130,246,0.5)] font-semibold"
             >
               Go to {navItems[selectedMobileIndex]?.name || "Section"} <ArrowRight size={18} />
             </button>

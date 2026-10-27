@@ -13,7 +13,7 @@ export const HeroSection = () => {
     >
       <div className="container max-w-5xl mx-auto text-center z-10 flex flex-col items-center">
         {/* Interactive TechText Canvas for Hi, I'm Yashwant K */}
-        <div className="w-full h-[180px] sm:h-[220px] md:h-[280px] lg:h-[320px] relative max-w-4xl mx-auto my-2">
+        <div className="w-full h-[150px] sm:h-[220px] md:h-[280px] lg:h-[320px] relative max-w-4xl mx-auto my-2">
           <TechText
             text="Hi, I'm Yashwant K"
             fontWeight={700}
@@ -63,13 +63,13 @@ export const HeroSection = () => {
               scale={1}
               lift={0}
               idleWave={false}
-              fontSize={19}
+              fontSize={18}
               fromColor="rgba(244, 244, 245, 0.72)"
               toColor="#60a5fa"
             />
           </div>
 
-          <div className="pt-4 opacity-0 animate-fade-in-delay-4 flex justify-center gap-4">
+          <div className="pt-3 sm:pt-4 opacity-0 animate-fade-in-delay-4 flex justify-center gap-4">
             <a href="#projects" className="cosmic-button">
               View My Work
             </a>
@@ -77,7 +77,7 @@ export const HeroSection = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
+      <div className="hidden sm:flex absolute bottom-6 sm:bottom-8 left-1/2 transform -translate-x-1/2 flex-col items-center animate-bounce">
         <span className="text-sm text-muted-foreground mb-2"> Scroll </span>
         <ArrowDown className="h-5 w-5 text-primary" />
       </div>
