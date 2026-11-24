@@ -343,16 +343,6 @@ const projects = [
     githubUrl: "https://github.com/Devwithyashwant/raft-kv-store",
   },
   {
-    id: 2,
-    title: "Orbit Analytics Dashboard",
-    description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "./projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
-    demoUrl: "#",
-    githubUrl: "https://github.com/Devwithyashwant",
-  },
-  {
     id: 3,
     title: "Distributed Rate Limiter & API Gateway",
     description:
@@ -387,7 +377,7 @@ export const ProjectsSection = () => {
           crafted with attention to detail, performance, and user experience.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch max-w-4xl mx-auto">
           {projects.map((project, key) => (
             <div
               key={key}
